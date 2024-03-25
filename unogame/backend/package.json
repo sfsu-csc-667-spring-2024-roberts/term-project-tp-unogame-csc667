@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development nodemon ./build/server.js",
     "build": "esbuild server.ts --bundle --external:livereload-js --platform=node --target=node21.7 --outfile=build/server.js",
-    "build:dev": "esbuild server.ts --watch --bundle --platform=node --target=node21.7 --outfile=build/server.js",
+    "dev": "esbuild server.ts --watch --bundle --external:livereload-js --platform=node --target=node21.7 --outfile=build/server.js",
     "db:create": "node-pg-migrate create -- ",
     "db:migrate": "node-pg-migrate up",
     "db:rollback": "node-pg-migrate down"

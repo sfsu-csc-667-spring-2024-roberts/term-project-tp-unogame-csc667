@@ -9,7 +9,7 @@ Install PostgreSQL 16.2
 
 `npm run build`:     build the server 
 
-`npm run build:dev`:     develop and build the server 
+`npm run dev`:     develop and build the server 
 
 `npm run start`:     run the server in production mode after the build process is completed
 
