@@ -4,11 +4,9 @@
   "description": "CSC 667 Term Project",
   "main": "index.js",
   "scripts": {
-    "start:server": "NODE_ENV=development nodemon ./build/server.js",
-    "build": "esbuild server.ts --bundle --platform=node --target=node21.7 --outfile=build/server.js",
-    "build:dev": "concurrently \"npm run build:dev:backend\" \"npm run build:dev:frontend\"",
-    "build:dev:backend": "esbuild server.ts --watch --bundle --platform=node --target=node21.7 --outfile=build/server.js",
-    "build:dev:frontend": "esbuild testPage.ts --watch --bundle --outfile=static/js/testPage.js",
+    "start": "NODE_ENV=development nodemon ./build/server.js",
+    "build": "esbuild server.ts --bundle --external:livereload-js --platform=node --target=node21.7 --outfile=build/server.js",
+    "build:dev": "esbuild server.ts --watch --bundle --platform=node --target=node21.7 --outfile=build/server.js",
     "db:create": "node-pg-migrate create -- ",
     "db:migrate": "node-pg-migrate up",
     "db:rollback": "node-pg-migrate down"
@@ -31,7 +29,7 @@
     "@types/node": "^20.11.26",
     "concurrently": "^8.2.2",
     "connect-livereload": "^0.6.1",
-    "esbuild": "^0.20.1",
+    "esbuild": "^0.20.2",
     "livereload": "^0.9.3",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5",
