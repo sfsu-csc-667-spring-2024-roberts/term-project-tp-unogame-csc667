@@ -15,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.3",
@@ -26,7 +28,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "@types/node": "^20.11.26",
+    "@types/node": "^20.11.30",
     "concurrently": "^8.2.2",
     "connect-livereload": "^0.6.1",
     "esbuild": "^0.20.2",

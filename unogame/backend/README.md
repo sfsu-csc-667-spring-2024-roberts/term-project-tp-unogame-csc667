@@ -13,7 +13,7 @@ Install PostgreSQL 16.2
 
 `npm run start`:     run the server in production mode after the build process is completed
 
-`http://localhost:3333/`:    backend server
+Port: defined locally or 3333 
 
 ## Database interaction
 
