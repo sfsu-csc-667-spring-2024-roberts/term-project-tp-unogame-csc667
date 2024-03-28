@@ -11,7 +11,7 @@ exports.up = pgm => {
             unique: true
         },
         password: {
-            type: "varchar(50)",
+            type: "varchar(256)",
             notNull: true
         },
         created_at: {
@@ -19,15 +19,9 @@ exports.up = pgm => {
             notNull: true,
             default: pgm.func("current_timestamp")
         },
-        first_name: {
-            type: "varchar(100)"
-        },
-        last_name: {
-            type: "varchar(100)"
-        },
         win_count: {
             type: "int"
-        },
+        }
     });
 };
 
