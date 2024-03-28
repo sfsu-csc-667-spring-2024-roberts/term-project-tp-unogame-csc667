@@ -2,7 +2,7 @@ import { signUp } from "./users/signup";
 import { logIn } from "./users/login";
 import { logOut } from "./users/logout";
 
-export { signUp, logIn, logOut}
+export { signUp, logIn, logOut };
 
 // usage
 // import * as Users from "path";
