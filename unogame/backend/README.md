@@ -1,24 +1,27 @@
 # Getting Started
+
 Install PostgreSQL 16.2
 
 ## Build and start backend server
 
-`cd unogame/backend`:     Change directory to backend folder from repo root
+`cd unogame/backend`: Change directory to backend folder from repo root
 
-`npm install`:     install dependencies
+`npm install`: install dependencies
 
-`npm run build`:     build the server 
+`npm run build`: build the server
 
-`npm run dev`:     develop and build the server 
+`npm run dev`: develop and build the server
 
-`npm run start`:     run the server in production mode after the build process is completed
+`npm run start`: start the server
 
-Port: defined locally or 3333 
+`npm run format`: format code
+
+Port: 3333 or defined locally
 
 ## Database interaction
 
-`npm run db:create name`:   create a new migration file with the name you give it
+`npm run db:create name`: create a new migration file with the name you give it
 
-`npm run db:migrate`:   update database schema
+`npm run db:migrate`: update database schema
 
-`npm run db:rollback`:   revert database schema
+`npm run db:rollback`: revert database schema

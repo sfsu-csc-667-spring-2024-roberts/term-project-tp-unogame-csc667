@@ -7,6 +7,7 @@
     "start": "NODE_ENV=development nodemon ./build/server.js",
     "build": "esbuild server.ts --bundle --external:livereload-js --platform=node --target=node21.7 --outfile=build/server.js",
     "dev": "esbuild server.ts --watch --bundle --external:livereload-js --platform=node --target=node21.7 --outfile=build/server.js",
+    "format": "prettier . --write",
     "db:create": "node-pg-migrate create -- ",
     "db:migrate": "node-pg-migrate up",
     "db:rollback": "node-pg-migrate down"
@@ -34,7 +35,7 @@
     "esbuild": "^0.20.2",
     "livereload": "^0.9.3",
     "nodemon": "^3.1.0",
-    "prettier": "^3.2.5",
+    "prettier": "3.2.5",
     "typescript": "^5.4.2"
   }
 }
