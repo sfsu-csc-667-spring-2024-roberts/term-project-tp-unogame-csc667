@@ -33,4 +33,6 @@ To change tables in database (will delete all values stored):
 ``` 
 DROP SCHEMA public CASCADE;
 CREATE SCHEMA public;
+GRANT ALL ON SCHEMA public TO postgres, public;
+COMMENT ON SCHEMA public IS 'standard public schema';
 ```
