@@ -1,4 +1,4 @@
-import * as UsersDB from "../../db/users_db";
+import * as UsersDB from "../../db/db_users";
 import bcrypt from "bcryptjs";
 
 const SALT_ROUNDS = 10;

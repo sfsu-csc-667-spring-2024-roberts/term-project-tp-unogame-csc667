@@ -1,11 +1,10 @@
 import path from "path";
 import express from "express";
 import morgan from "morgan";
-
 import cookieParser from "cookie-parser";
 
 import * as Routes from "./routes";
-import { setUpDevelopmentEnvironment } from "./utilities/set-up-development-environment";
+import { setUpDevelopmentEnvironment } from "./utilities/setup_development_environment";
 
 // not used for now
 // import { setLocalSession } from "./middleware/set_session";

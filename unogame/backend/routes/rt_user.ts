@@ -1,6 +1,6 @@
 import express from "express";
 import { requestTime } from "../middleware/timestamp";
-import * as Users from "../controllers/users_controller";
+import * as Users from "../controllers/ctrl_users";
 
 const router = express.Router();
 

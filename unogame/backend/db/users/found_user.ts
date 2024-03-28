@@ -1,4 +1,4 @@
-import { db } from "../connection";
+import { db } from "../db_connection";
 
 const FOUND_USER = "SELECT username FROM users WHERE username=$1";
 

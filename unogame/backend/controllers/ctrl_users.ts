@@ -6,4 +6,4 @@ export { signUp, logIn, logOut };
 
 // usage
 // import * as Users from "path";
-// import * as Users from "../controllers/users_controller";
+// import * as Users from "../controllers/ctrl_users";

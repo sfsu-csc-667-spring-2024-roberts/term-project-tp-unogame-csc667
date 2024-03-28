@@ -4,4 +4,4 @@ import { foundUser } from "./users/found_user";
 export { addUser, foundUser };
 // usage
 // import * as UsersDB from "path";
-// import * as UsersDB from "../../db/users_db";
+// import * as UsersDB from "../../db/db_users";
