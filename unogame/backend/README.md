@@ -24,4 +24,13 @@ Port: 3333 or defined locally
 
 `npm run db:migrate`: update database schema
 
-`npm run db:rollback`: revert database schema
+`npm run db:rollback`: revert database schema ( find this kind of annoying, alternative option below )
+
+To change tables in database (will delete all values stored):
+- modify the table migration file directly
+- open pgAdmin: right click the 667uno database, and select Query Tool
+- run the following command to delete all old tables, then `npm run db:migrate` to add updated tables
+``` 
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+```
